@@ -1,7 +1,9 @@
 FROM ubuntu
 
-WORKDIR /usr/src/app
-RUN chmod 777 /usr/src/app
+WORKDIR /bot
+RUN chmod 777 /bot
+RUN git clone https://github.com/JamieHoSzeYui/curtanaot-unobot /bot
+RUN cd /bot
 RUN apt-get -qq update
 RUN apt-get -qq install -y locales git python3.7 openjdk-8-jdk wget unace python3 unrar zip unzip p7zip-full p7zip-rar sharutils rar uudeview mpack arj cabextract file-roller device-tree-compiler liblzma-dev python-pip brotli liblz4-tool gawk aria2
 RUN pip install backports.lzma protobuf pycrypto
