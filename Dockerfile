@@ -26,4 +26,4 @@ RUN echo "    "time_removal_after_skip": 20," >> config.json
 RUN echo "    "min_fast_turn_time": 15," >> config.json
 RUN echo "    "min_players": 2" >> config.json
 RUN echo "}" >> config.json
-CMD ["python3","-m","bot.py"]
+CMD ["python3","bot.py"]
