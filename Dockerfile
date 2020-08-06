@@ -1,6 +1,8 @@
-FROM ubuntu
+FROM ubuntu:latest
 
 WORKDIR /bot
+RUN echo "Wassup dumbo"
+RUN ls
 RUN chmod 777 /bot
 RUN git clone https://github.com/JamieHoSzeYui/curtanaot-unobot /bot
 RUN cd /bot
